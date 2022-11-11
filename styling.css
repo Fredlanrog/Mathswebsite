@@ -1,0 +1,189 @@
+body {
+    font: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  width:  1050px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+#header {
+    height: 100px;
+    padding: 10px  0;
+}
+
+#brand h1 {
+    display: inline;
+    }
+
+h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(207, 101, 207);
+    text-decoration: none;
+}
+#searchbox {
+    float: right;
+    background: linear-gradient(#E4F289, #92b943); /*whenever we use the gradient function we need to add below*/
+    background: -webkit-linear-gradient(#E4F289, #92b943);
+    background: -o-linear-gradient(#E4F289, #92b943);
+    background: -moz-linear-gradient(#E4F289, #92b943);
+    width: 400px;
+    height: 45px;
+    padding: 20px 10px 0 10px;
+    
+}
+.text {
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(184, 104, 43);
+    background: white url(images/search.png) right center no-repeat; /*This line is for the magnifyng glass within the text rectangle*/
+    border: 1px solid #C8DD3E;
+}
+.submit {
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background:rgb(207, 101, 207) /*background-color cannot be used for buttons, instead we simply use background*/
+
+}
+
+.clear {
+    clear: both;
+}
+#menu {
+    height: 70px;
+    padding: 7px 0; /*to give top space to the nav elements, center them vertically*/
+    background: linear-gradient(#F8F594, #D5D533); 
+    
+
+    
+}
+ul {
+    list-style: none; /*to get rid of the dots*/
+}
+
+#menu ul li {
+    /*float: left;*/
+    list-style: none; /* to get rid of the underline*/
+    display: inline-block; /*to make menu items appear horizonatally. Prefet this to "float"*/
+    padding: 0 30px;  /*this is to align the buttons horizontaly to the left*/
+    height: 30px;
+    border-right: 1px solid #5d12e7;
+} 
+
+#menu ul li:last-child {
+    border-right: none;  /* to delete the vertical line to the right of "contact us*/
+}
+
+
+
+
+#menu ul li a{
+    text-decoration: none; /*to get rid of the underline*/
+    text-transform: uppercase; /*to make all letters uppercase*/
+    font-size: 17px;    
+    color: #5D12E7;
+    line-height: 30px; /*to center text vertically*/
+    transition: font-size 0.3s ease; /*this needs to be done in addition to the hover effect below. Also we can use linear instead of ease.*/
+    -webkit-transition: font-size 0.3s ease;/*this is for Safari browser*/
+    -moz-transition: font-size 0.3s ease; /*this is for Mozilla browser*/
+    -o-transition: font-size 0.3s ease; /*this is for Opera browser*/
+    -ms-transition: font-size 0.3s ease; /*this is for Internet Explorer browser*/
+    
+   
+}
+
+#menu ul li a:hover, #menu ul li a.active {   /*Notice the "a" needs to be next to the colon*/
+    font-size: 20px;
+    font-weight: bold;
+    color: #C34FDB;
+}
+#introduction {
+    background: linear-gradient(#E5F2BB, #B7E952); 
+    
+    padding: 30px;
+    margin: 16px 0;  }    /*instead of background color as we are using linear gradients. The first color on the left is the one that starts from the top*/
+
+#introduction h3 {
+    font-size: 45px;
+    color: #316901;
+    font-weight: normal;
+}
+#introduction p {
+    font-size: 25px;
+    color: #628F19;
+    text-align: justify;
+}
+.sidebar {
+    height: 500px;
+    width: 425px;
+    border: 1px solid #BAF46F;
+    border-radius: 60px;
+    margin-top: 50px;
+    padding: 10px 30px;
+    }
+
+.sidebar ul li {
+    padding-top: 8px;
+    }
+
+#leftsidebar ul li {
+    padding: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    list-style-image: url(images/arrow.png); /*this is to insert the arrow next to the Go to items*/
+}
+
+#rightsidebar ul li {
+    padding-bottom:20px;
+    padding-top: 17px;
+    padding-left:70px ; /*the three paddings can be combines in one line only. 20px 0 20px 70px*/
+    background: url(images/tick.png) no-repeat left center; /*This is another way of inserting images next to the list items. In this case the arrow. It seems to be less efficient than the one for the arrows above.*/
+
+}
+
+#leftsidebar h3 {
+    color: #8314DB;
+    font-size: 30px;
+}
+#rightsidebar h3 {
+    color: #8314DB;
+    font-size: 30px;}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color:#C34FDB;
+}
+.sidebar ul li a:hover, .sidebar ul li a.active { /*hover has to be used with transition below.*/
+    text-decoration: none;
+    color: #5D12E7;
+    font-size: 23px;
+    font-weight: bold;
+
+transition: font-size 0.3s ease; /*this needs to be done in addition to the hover effect below. Also we can use linear instead of ease.*/
+-webkit-transition: font-size 0.3s ease;/*this is for Safari browser*/
+-moz-transition: font-size 0.3s ease; /*this is for Mozilla browser*/
+-o-transition: font-size 0.3s ease; /*this is for Opera browser*/
+-ms-transition: font-size 0.3s ease; /*this is for Internet Explorer browser*/
+}
+
+#leftsidebar {
+    float: left;
+}
+#rightsidebar {
+    float: right;    
+}
+
+.footer {
+    height: 60px;
+    background: linear-gradient(#F6F390, #D5D533);
+    padding: 10px 30px;
+    margin-top: 15px;
+}
